@@ -69,8 +69,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -100,7 +107,6 @@
     <Folder Include="Fonts\" />
     <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\ViewModel\" />
-    <Folder Include="MVVM\View\" />
     <Folder Include="Theme\" />
   </ItemGroup>
   <ItemGroup>
@@ -108,10 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\gracia - Copy.png" />
-    <Resource Include="Images\icons8-accueil-150 - Copy.png" />
-    <Resource Include="Images\icons8-dossier-ouvert-100 - Copy.png" />
-    <Resource Include="Images\icons8-facebook-nouveau-144 - Copy.png" />
-    <Resource Include="Images\icons8-instagram-256 - Copy.png" />
     <Resource Include="Images\icons8-linkedin-144 - Copy.png" />
     <Resource Include="Images\icons8-pinterest-80 - Copy.png" />
     <Resource Include="Images\icons8-twitter-144.png" />
@@ -120,6 +122,12 @@
     <Resource Include="Images\nathan.png" />
     <Resource Include="Images\roxanne.png" />
     <Resource Include="Images\ruth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons-accueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons-dossier.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

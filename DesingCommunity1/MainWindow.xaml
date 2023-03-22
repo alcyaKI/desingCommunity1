@@ -7,19 +7,37 @@
         mc:Ignorable="d"
         Width="700" Height="800"
         ResizeMode="CanResize">
-    <Grid  Background="#000">
-        <Grid Grid.Column="1" >
+    <Grid  Background="#090810">
+        <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
-        </Grid>
 
-        <!--Section Navigation-->
-        <StackPanel >
-            <Image/>
-        </StackPanel>
-        <!--Fin Section-->
-        
+            <!--Section Navigation-->
+            <StackPanel Background="#232228" >
+                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                    <Image Source="\Images\icons-accueil.png"/>
+                </Button>
+
+                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                    <Image Source="\Images\icons-dossier.png"/>
+                </Button>
+
+                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                    <Image Source="\Images\icons-accueil.png"/>
+                </Button>
+
+                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                    <Image Source="\Images\icons-accueil.png"/>
+                </Button>
+
+                <Button BorderBrush="#232228" Width="20" Margin="10, 540" Height="15" Background="#232228">
+                    <Image Source="\Images\icons-accueil.png"/>
+                </Button>
+            </StackPanel>
+            <!--Fin Section-->
+            
+            
+        </Grid>
     </Grid>
 </Window>
