@@ -15,24 +15,21 @@
 
             <!--Section Navigation-->
             <StackPanel Background="#232228" >
+                
                 <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\icons-accueil.png"/>
+                    <Image Source="\Images\accueil.png"/>
                 </Button>
 
                 <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\icons-dossier.png"/>
+                    <Image Source="\Images\dossier.png"/>
                 </Button>
 
                 <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\icons-accueil.png"/>
+                    <Image Source="\Images\partager.png"/>
                 </Button>
 
                 <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\icons-accueil.png"/>
-                </Button>
-
-                <Button BorderBrush="#232228" Width="20" Margin="10, 540" Height="15" Background="#232228">
-                    <Image Source="\Images\icons-accueil.png"/>
+                    <Image Source="\Images\utilisateurs.png"/>
                 </Button>
             </StackPanel>
             <!--Fin Section-->

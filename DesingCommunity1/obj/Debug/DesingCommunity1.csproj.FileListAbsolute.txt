@@ -4,7 +4,6 @@ C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\MainWind
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\App.g.cs
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\DesingCommunity1_MarkupCompile.cache
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\DesingCommunity1_MarkupCompile.lref
-C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\App.baml
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\MainWindow.baml
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\DesingCommunity1.g.resources
 C:\Users\user\Documents\WPF\DesingCommunity1\DesingCommunity1\obj\Debug\DesingCommunity1.pdb

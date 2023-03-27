@@ -129,5 +129,26 @@
   <ItemGroup>
     <Resource Include="Images\icons-dossier.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chercher %281%29.png" />
+    <Resource Include="Images\dossier.png" />
+    <Resource Include="Images\etoile %281%29.png" />
+    <Resource Include="Images\utilisateurs %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\accueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\utilisateurs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\partager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fleche-gauche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\etoile.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
