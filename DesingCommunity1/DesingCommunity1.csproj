@@ -69,12 +69,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVVM\View\acceuil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\View\acceuil.xaml.cs">
+      <DependentUpon>acceuil.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -113,7 +120,7 @@
     <Resource Include="Images\charlie.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\gracia - Copy.png" />
+    <Resource Include="Images\gracia.png" />
     <Resource Include="Images\icons8-linkedin-144 - Copy.png" />
     <Resource Include="Images\icons8-pinterest-80 - Copy.png" />
     <Resource Include="Images\icons8-twitter-144.png" />
@@ -130,7 +137,7 @@
     <Resource Include="Images\icons-dossier.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\chercher %281%29.png" />
+    <Resource Include="Images\chercher.png" />
     <Resource Include="Images\dossier.png" />
     <Resource Include="Images\etoile %281%29.png" />
     <Resource Include="Images\utilisateurs %281%29.png" />

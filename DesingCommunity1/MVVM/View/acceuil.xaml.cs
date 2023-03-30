@@ -13,27 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DesingCommunity1
+namespace DesingCommunity1.MVVM.View
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for acceuil.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class acceuil : UserControl
 	{
-		public MainWindow()
+		public acceuil()
 		{
 			InitializeComponent();
-			var myLst = new List<Avatar>() 
-			{
-				new Avatar() { AvatarName = "Alcya", img="C\\User..."},
-				new Avatar() { AvatarName = "Ruth", img="C\\User..."},
-			};
-			DataContext = myLst;
 		}
 	}
-	class Avatar
-	{
-        public string AvatarName { get; set; }
-        public string img { get; set; }
-    }
 }

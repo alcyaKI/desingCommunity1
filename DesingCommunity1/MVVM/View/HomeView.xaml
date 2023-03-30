@@ -7,46 +7,48 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" 
              d:DesignWidth="800">
-    <StackPanel>
-        <Border Height="450"
+    <Grid>
+
+        <StackPanel>
+            <Border Height="450"
             CornerRadius="20">
-            <Border.Clip>
-                <RectangleGeometry RadiusX="10"
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
                                    RadiusY="10"
                                    Rect="0,0,500,500"/>
-            </Border.Clip>
+                </Border.Clip>
 
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                    <GradientStop Color="#232228" Offset="0.0"/>
-                </LinearGradientBrush>
-            </Border.Background>
-            <Grid >
-                <Grid.RowDefinitions >
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="200"/>
-                </Grid.RowDefinitions>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#232228" Offset="0.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid >
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="200"/>
+                    </Grid.RowDefinitions>
 
-                <StackPanel Background="#232228" >
-                    <Button  BorderBrush="#232228" 
+                    <StackPanel Background="#232228" >
+                        <Button  BorderBrush="#232228" 
                              Width="27" 
                              Margin="10, 10, 10, 10" 
                              Height="25" 
                              Background="#232228">
-                        <Image Source="\Images\etoile.png"/>
-                    </Button>
+                            <Image Source="\Images\etoile.png"/>
+                        </Button>
 
-                    <Button BorderBrush="#09080F" 
+                        <Button BorderBrush="#09080F" 
                             Width="27" 
                             Margin="-700, -40, -10, 10" 
                             Height="25" 
                             Background="#09080F">
-                        <Image Source="\Images\fleche-gauche.png"/>
-                    </Button>
-                </StackPanel>
+                            <Image Source="\Images\fleche-gauche.png"/>
+                        </Button>
+                    </StackPanel>
 
-                <StackPanel Grid.Row="1"  >
-                    <Border 
+                    <StackPanel Grid.Row="1"  >
+                        <Border 
                         HorizontalAlignment="Left" 
                         Margin="30 0 0 0" 
                         Background="#ffff" 
@@ -55,20 +57,20 @@
                         Height="170">
 
 
-                        <Button 
+                            <Button 
                             BorderBrush="#FFFFFF" 
                             Height="90" 
                             Background="#FFFFFF" 
                             Margin="41,9,30,9">
-                            <Image Source="\Images\julie.png" 
+                                <Image Source="\Images\julie.png" 
                                    Height="100" 
                                    Width="70"
                                    HorizontalAlignment="Stretch"
                                    VerticalAlignment="Bottom"/>
-                        </Button>
-                    </Border>
+                            </Button>
+                        </Border>
 
-                    <TextBlock Text="Lidy Sodge"
+                        <TextBlock Text="Lidy Sodge"
                                Foreground="#FFFFFF"
                                Width="200"
                                FontSize="28" 
@@ -78,7 +80,7 @@
                                Margin="0 ,-100 ,150,0"/>
 
 
-                    <TextBox   Text="UI Writer"
+                        <TextBox   Text="UI Writer"
                                Foreground="#FFFFFF"
                                Background="#222328"
                                Width="200"
@@ -89,14 +91,15 @@
                                Margin="0 ,-70 ,150 ,0"/>
 
 
-                    <StackPanel>
-                        <Button Width="100"
+                        <StackPanel>
+                            <Button Width="100"
                                 Content="Call" 
                                 BorderThickness="1,2,3,4"
                                 BorderBrush="#FFFFFF"
                                 Background="#FFFFFF"
                                 Margin="10, -30,10 ,10"/>
-                        <Button HorizontalAlignment="center"
+
+                            <Button HorizontalAlignment="center"
                                 Width="100"
                                 Content="Go To Chat" 
                                 BorderThickness="1,2,3,4"
@@ -104,12 +107,15 @@
                                 Background="#FFFFFF"
                                 Margin="-250, -35,10,10"
                                 />
+                        </StackPanel>
                     </StackPanel>
-                </StackPanel>
 
-                <StackPanel Grid.Row="2">
-                    <TextBlock Text="About"/>
-                    <TextBox Foreground="#FFFFFF" 
+                    <StackPanel Grid.Row="2" 
+                            Margin="10,200,300,0" 
+                            Height="50">
+                        <Image Source="\images\nathan.png"/>
+                        <TextBlock Text="About"/>
+                        <TextBox Foreground="#FFFFFF" 
                             Margin="10, 200, 10,10" 
                             Text="Lorem ipsum dolor sit amet, 
                              consectetur adipiscing elit. Sed euismod, 
@@ -127,11 +133,12 @@
                              ultrices posuere cubilia curae; Pellentesque habitant morbi t
                              ristique senectus et netus et malesuada fames ac turpis egestas. 
                              Suspendisse potenti. Nullam non augue nec risus aliquam tempor a quis metus."/>
-                </StackPanel>
+                    </StackPanel>
 
-            </Grid>
+                </Grid>
 
-        </Border>
+            </Border>
 
-    </StackPanel>
+        </StackPanel>
+    </Grid>
 </UserControl>
