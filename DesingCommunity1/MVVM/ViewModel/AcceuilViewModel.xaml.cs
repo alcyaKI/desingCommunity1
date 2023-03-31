@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DesingCommunity1
+namespace DesingCommunity1.MVVM.ViewModel
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for AcceuilViewModel.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class AcceuilViewModel : UserControl
 	{
-		public MainWindow()
+		public AcceuilViewModel()
 		{
 			InitializeComponent();
-
-		}	
-    }
+		}
+	}
 }

@@ -7,138 +7,322 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" 
              d:DesignWidth="800">
-    <Grid>
+    <StackPanel>
 
-        <StackPanel>
-            <Border Height="450"
-            CornerRadius="20">
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <Border Width="475"
+                    Height="476">
+
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
-                                   RadiusY="10"
-                                   Rect="0,0,500,500"/>
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
                 </Border.Clip>
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#232228" Offset="0.0"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-                <Grid >
-                    <Grid.RowDefinitions >
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="200"/>
-                    </Grid.RowDefinitions>
-
-                    <StackPanel Background="#232228" >
-                        <Button  BorderBrush="#232228" 
-                             Width="27" 
-                             Margin="10, 10, 10, 10" 
-                             Height="25" 
-                             Background="#232228">
-                            <Image Source="\Images\etoile.png"/>
-                        </Button>
-
-                        <Button BorderBrush="#09080F" 
-                            Width="27" 
-                            Margin="-700, -40, -10, 10" 
-                            Height="25" 
-                            Background="#09080F">
-                            <Image Source="\Images\fleche-gauche.png"/>
-                        </Button>
-                    </StackPanel>
-
-                    <StackPanel Grid.Row="1"  >
-                        <Border 
-                        HorizontalAlignment="Left" 
-                        Margin="30 0 0 0" 
-                        Background="#ffff" 
-                        CornerRadius="100" 
-                        Width="149" 
-                        Height="170">
-
-
-                            <Button 
-                            BorderBrush="#FFFFFF" 
-                            Height="90" 
-                            Background="#FFFFFF" 
-                            Margin="41,9,30,9">
-                                <Image Source="\Images\julie.png" 
-                                   Height="100" 
-                                   Width="70"
-                                   HorizontalAlignment="Stretch"
-                                   VerticalAlignment="Bottom"/>
-                            </Button>
+                <Grid Background="#090810">
+                    <StackPanel Background="#232228">
+                        <Border BorderBrush="#232228"
+                                CornerRadius="10">
+                            <Image Source="\images\fleche-gauche.png"
+                               Width="40"
+                               Height="40"
+                               Margin="0,0,300,0"/>
                         </Border>
 
-                        <TextBlock Text="Lidy Sodge"
-                               Foreground="#FFFFFF"
-                               Width="200"
-                               FontSize="28" 
-                               FontWeight="SemiBold" 
-                               FontFamily="Trebuchet MS" 
-                               VerticalAlignment="Top"
-                               Margin="0 ,-100 ,150,0"/>
+                        <Border BorderBrush="#232228"
+                                CornerRadius="10">
+                            <Image Source="\images\etoile.png"
+                               Width="40"
+                               Height="40"
+                               Margin="0,-40,-300,0"/>
+                        </Border>
 
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" 
+                                Margin="0,46,0,304"
+                                Background="#232228">
+                        <Border BorderThickness="2" 
+                                BorderBrush="#232228" 
+                                CornerRadius="5">
+                            <Image Source="\images\julie.png"
+                                   Width="100"
+                                   HorizontalAlignment="Left"
+                                   Margin="30,10,10,10"/>
+                        </Border>
+                        <StackPanel Orientation="Vertical" 
+                                    Width="293"
+                                    Background="#232228">
 
-                        <TextBox   Text="UI Writer"
-                               Foreground="#FFFFFF"
-                               Background="#222328"
-                               Width="200"
-                               FontSize="15" 
-                               FontWeight="Normal" 
-                               FontFamily="Trebuchet MS" 
-                               VerticalAlignment="Top"
-                               Margin="0 ,-70 ,150 ,0"/>
-
-
-                        <StackPanel>
-                            <Button Width="100"
-                                Content="Call" 
-                                BorderThickness="1,2,3,4"
-                                BorderBrush="#FFFFFF"
-                                Background="#FFFFFF"
-                                Margin="10, -30,10 ,10"/>
-
-                            <Button HorizontalAlignment="center"
-                                Width="100"
-                                Content="Go To Chat" 
-                                BorderThickness="1,2,3,4"
-                                BorderBrush="#FFFFFF"
-                                Background="#FFFFFF"
-                                Margin="-250, -35,10,10"
-                                />
+                            <TextBlock Text="Lyli Sodge"
+                                   Width="200"
+                                   Foreground="#FFFFFF"
+                                   FontSize="40"/>
+                            <TextBox Text="UX Writer"
+                                     FontSize="15"
+                                     Width="200"
+                                     Background="#232228"
+                                     Foreground="#232228"/>
+                            <StackPanel Orientation="Horizontal"
+                                        Background="#232228">
+                                <Button BorderThickness="2" 
+                                        BorderBrush="#232238" 
+                                        Content="Go to Chat"
+                                        Width="75"
+                                        Background="#090810"
+                                        Foreground="#FFFFFF"
+                                        Margin="50,0,10,0"/>
+                                <Button BorderThickness="2" 
+                                        Background="#FFFFFF"
+                                        BorderBrush="#FFFFFF" 
+                                        Content="Call"
+                                        Width="50"
+                                        Margin="10,0,0,0"/>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
 
-                    <StackPanel Grid.Row="2" 
-                            Margin="10,200,300,0" 
-                            Height="50">
-                        <Image Source="\images\nathan.png"/>
-                        <TextBlock Text="About"/>
-                        <TextBox Foreground="#FFFFFF" 
-                            Margin="10, 200, 10,10" 
-                            Text="Lorem ipsum dolor sit amet, 
-                             consectetur adipiscing elit. Sed euismod, 
-                             ante vel consequat vestibulum, nulla sapien luctus 
-                             odio, vel bibendum nisl velit nec diam. Nulla facilisi.
-                             Fusce tincidunt libero vitae tellus consectetur, non 
-                             faucibus mauris bibendum. Sed auctor ex in lorem tristique, 
-                             ut posuere purus malesuada. Maecenas eget leo et magna ultrices 
-                             aliquet sed a nibh. Donec sit amet arcu ac quam bibendum blandit
-                             eu vel massa. Duis quis justo eget sapien sollicitudin 
-                             venenatis eu id enim.
-                             Pellentesque habitant morbi tristique senectus 
-                             et netus et malesuada fames ac turpis egestas. 
-                             Vestibulum ante ipsum primis in faucibus orci luctus et 
-                             ultrices posuere cubilia curae; Pellentesque habitant morbi t
-                             ristique senectus et netus et malesuada fames ac turpis egestas. 
-                             Suspendisse potenti. Nullam non augue nec risus aliquam tempor a quis metus."/>
+                    <!-- partie reseau-->
+                    <StackPanel Margin="10,202,0,178" 
+                                Height="NaN">
+                        <TextBlock Text="About"
+                                   Foreground="#FFFFFF"
+                                   Background="AliceBlue"/>
                     </StackPanel>
-
+                    <!-- fin partie reseau-->
                 </Grid>
 
-            </Border>
+            </Border >
 
+            <Border Width="268"
+                    Height="460"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+
+                <ScrollViewer Background="#232228">
+                    <StackPanel>
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\gracia.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+                            
+                            
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\julie.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\ken.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\nathan.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\roxanne.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\ruth.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+
+                        <Border BorderThickness="2" 
+                            BorderBrush="#232228" 
+                            CornerRadius="5,5,0,0">
+                            <StackPanel Background="#090810" 
+                                    Width="270"
+                                    Height="95">
+                                <Image Source="\images\charlie.png" 
+                                   Width="100" 
+                                   Height="95"
+                                   HorizontalAlignment="Left"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                    Text="Anne black" 
+                                       FontSize="20"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Top"
+                                       Margin="10,-80,-50,0" 
+                                       Height="30"
+                                       Width="100"/>
+                                <TextBlock Foreground="#FFFFFF" 
+                                            TextWrapping="Wrap"
+                                            Text="Manger at Di-Max"
+                                            HorizontalAlignment="Center"
+                                            Margin="50,-30,-20,0"
+                                            Height="20"
+                                            Width="125"/>
+
+                            </StackPanel>
+
+
+                        </Border>
+                    </StackPanel>
+                    
+                    
+                </ScrollViewer>
+
+            </Border>
         </StackPanel>
-    </Grid>
+    </StackPanel>
 </UserControl>

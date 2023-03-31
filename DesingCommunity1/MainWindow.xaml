@@ -3,18 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ViewModel="clr-namespace:DesingCommunity1.MVVM.ViewModel"
         xmlns:local="clr-namespace:DesingCommunity1"
         mc:Ignorable="d"
         Width="700" Height="800"
         ResizeMode="CanResize">
+    <Window.DataContext>
+        <ViewModel:AcceuilViewModel/>
+    </Window.DataContext>
     <Grid  Background="#090810">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <!--Section Navigation-->
@@ -38,5 +43,7 @@
             </StackPanel>
             <!--Fin Section-->
         </Grid>
+        <ContentControl Margin="63,10,10,10"
+                        Content="{Binding CurrentView}"/>
     </Grid>
 </Window>
