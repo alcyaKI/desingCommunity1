@@ -6,44 +6,63 @@
         xmlns:ViewModel="clr-namespace:DesingCommunity1.MVVM.ViewModel"
         xmlns:local="clr-namespace:DesingCommunity1"
         mc:Ignorable="d"
-        Width="700" Height="800"
-        ResizeMode="CanResize">
+        Width="950" Height="600"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True">
     <Window.DataContext>
         <ViewModel:AcceuilViewModel/>
     </Window.DataContext>
-    <Grid  Background="#090810">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.RowSpan="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+    <Border CornerRadius="20" Background="#090810" Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- teste bouton-->
+                <Border>
+                    <StackPanel>
+                        <RadioButton Content="test"
+                                 Height="50"
+                                 Foreground="#fff"/>
+                    </StackPanel>
+                </Border>
+                <!-- fin teste bouton-->
 
-            <!--Section Navigation-->
-            <StackPanel Background="#232228" >
+                <!--Section Navigation-->
+                <Border Background="#232228" 
+                        CornerRadius="20" 
+                        Padding="10">
+                    <StackPanel Background="#232228" >
 
-                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\accueil.png"/>
-                </Button>
+                        <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                            <Image Source="\Images\accueil.png"/>
+                        </Button>
 
-                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\dossier.png"/>
-                </Button>
+                        <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                            <Image Source="\Images\dossier.png"/>
+                        </Button>
 
-                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\partager.png"/>
-                </Button>
+                        <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                            <Image Source="\Images\partager.png"/>
+                        </Button>
 
-                <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
-                    <Image Source="\Images\utilisateurs.png"/>
-                </Button>
-            </StackPanel>
-            <!--Fin Section-->
-        </Grid>
-        <ContentControl Margin="63,10,10,10"
+                        <Button BorderBrush="#232228" Width="27" Margin="10, 10, 10, 10" Height="25" Background="#232228">
+                            <Image Source="\Images\utilisateurs.png"/>
+                        </Button>
+                    </StackPanel>
+                </Border>
+                <!--Fin Section-->
+            </Grid>
+            <ContentControl Margin="63,10,10,10"
                         Content="{Binding CurrentView}"/>
-    </Grid>
+        </Grid>
+    </Border>
 </Window>

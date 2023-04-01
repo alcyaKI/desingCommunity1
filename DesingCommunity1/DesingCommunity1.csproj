@@ -69,18 +69,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MVVM\ViewModel\AcceuilViewModel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MVVM\ViewModel\HomeViewModel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MVVM\ViewModel\MainViewModel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MVVM\View\AcceuilView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -91,15 +79,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MVVM\ViewModel\AcceuilViewModel.xaml.cs">
-      <DependentUpon>AcceuilViewModel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MVVM\ViewModel\HomeViewModel.xaml.cs">
-      <DependentUpon>HomeViewModel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MVVM\ViewModel\MainViewModel.xaml.cs">
-      <DependentUpon>MainViewModel.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="MVVM\ViewModel\AcceuilViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\View\AcceuilView.xaml.cs">
       <DependentUpon>AcceuilView.xaml</DependentUpon>
     </Compile>

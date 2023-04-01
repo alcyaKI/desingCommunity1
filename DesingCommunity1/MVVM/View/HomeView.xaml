@@ -140,7 +140,7 @@
                                     Height="95">
                                 <Image Source="\images\julie.png" 
                                    Width="100" 
-                                   Height="95"
+                                   Height="100"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Foreground="#FFFFFF" 
                                     Text="Anne black" 

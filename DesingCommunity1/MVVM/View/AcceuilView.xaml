@@ -31,19 +31,22 @@
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Text="Anne black" 
                                        FontSize="20"
+                                       Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
                                        Height="30"
                                        Width="100"/>
                                 <TextBlock TextWrapping="Wrap"
+                                           Foreground="#FFFFFF"
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
@@ -52,19 +55,21 @@
                             </StackPanel>
                         </Border>
 
-                                            </Grid>
+                    </Grid>
                     <Grid Grid.Row="1">
                         <Border BorderThickness="2" 
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Text="Anne black" 
                                        FontSize="20"
+                                           Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
@@ -74,7 +79,8 @@
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
-                                       Height="30"/>
+                                       Height="30"
+                                       Foreground="#FFFFFF"/>
 
                             </StackPanel>
                         </Border>
@@ -103,13 +109,15 @@
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Text="Anne black" 
                                        FontSize="20"
+                                       Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
@@ -119,7 +127,8 @@
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
-                                       Height="30"/>
+                                       Height="30"
+                                       Foreground="#FFFFFF"/>
 
                             </StackPanel>
                         </Border>
@@ -130,13 +139,15 @@
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Text="Anne black" 
                                        FontSize="20"
+                                       Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
@@ -146,6 +157,7 @@
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
+                                       Foreground="#FFFFFF"
                                        Height="30"/>
 
                             </StackPanel>
@@ -176,13 +188,15 @@
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
                                    HorizontalAlignment="Left"/>
                                 <TextBlock Text="Anne black" 
                                        FontSize="20"
+                                       Foreground="#FFFFFF"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
@@ -192,7 +206,8 @@
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
-                                       Height="30"/>
+                                       Height="30"
+                                       Foreground="#FFFFFF"/>
 
                             </StackPanel>
                         </Border>
@@ -203,7 +218,8 @@
                             BorderBrush="Black" 
                             CornerRadius="5">
                             <StackPanel Width="270"
-                                    Height="95">
+                                    Height="95"
+                                    Background="#232228">
                                 <Image Source="\images\gracia.png" 
                                    Width="100" 
                                    Height="95"
@@ -214,12 +230,14 @@
                                        VerticalAlignment="Top"
                                        Margin="10,-80,-50,0" 
                                        Height="30"
+                                       Foreground="#FFFFFF"    
                                        Width="100"/>
                                 <TextBlock TextWrapping="Wrap"
                                        Text="Manger at Di-Max"
                                        HorizontalAlignment="Center"
                                        Margin="50,-30,-20,0"
-                                       Height="30"/>
+                                       Height="30"
+                                       Foreground="#FFFFFF"/>
 
                             </StackPanel>
                         </Border>
@@ -269,7 +287,8 @@
                     <!--end buttom seach -->
                 </StackPanel>
 
-                <StackPanel Grid.Row="1">
+                <StackPanel Grid.Row="1"
+                            Background="#232228">
                     <Button Content="all"
                             Width="40"
                             Margin="-700,0,50,10"/>

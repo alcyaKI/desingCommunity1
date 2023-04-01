@@ -8,8 +8,11 @@
 
     <Application.Resources>
         <ResourceDictionary>
-            <DataTemplate DataType="{x:Type ViewMode:HomeViewModel}">
-                <View:HomeViewModel/>
+            <DataTemplate DataType="{x:Type ViewModel:AcceuilViewModel}">
+                <View:acceuil/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModel:HomeViewModel}">
+                <View:HomeView/>
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>        
